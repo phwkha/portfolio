@@ -1,4 +1,4 @@
-.intro_sec .h_bg-image.right-panel-container {
+	.intro_sec .h_bg-image.right-panel-container {
 	height: 100%;
 	min-height: 0;
 	overflow-y: auto;
@@ -18,6 +18,18 @@
 .right-panel-container h2,
 .right-panel-container p {
 	margin-bottom: 12px;
+}
+
+.ac_btn {
+    padding: 4px 19px;
+    color: var(--secondary-color);
+    position: relative;
+    border: var(--secondary-color) 2px solid;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    cursor: pointer;
+    border-radius: 0;
+    margin-right: 20px;
 }
 
 @media (max-width: 991.98px) {

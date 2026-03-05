@@ -17,8 +17,8 @@ export const Home = () => {
           <meta name="description" content={meta.description} />
         </Helmet>
         <div className="intro_sec d-block d-lg-flex align-items-center ">
-          <Portfolio />
           <Info />
+          <Portfolio />
         </div>
       </section>
     </HelmetProvider>
