@@ -16,7 +16,7 @@ const Info = () => {
                 </div>
               <div className="intro mx-auto">
                 <h2 className="mb-1x">{introdata.title}</h2>
-                <h1 className="fluidz-48 mb-1x">
+                <h2 className="fluidz-48 mb-1x" style={{ fontWeight: "bold", height: "80px" }}>
                   <Typewriter
                     options={{
                       strings: [
@@ -30,7 +30,7 @@ const Info = () => {
                       deleteSpeed: 10,
                     }}
                   />
-                </h1>
+                </h2>
                 <p className="mb-1x">{introdata.description}</p>
                 <div className="intro_btn-action pb-5">
                   <a href={introdata.my_cv} rel="noopener noreferrer">
