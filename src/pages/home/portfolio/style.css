@@ -1,0 +1,28 @@
+.intro_sec .h_bg-image.right-panel-container {
+	height: 100%;
+	min-height: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	padding: 24px;
+	overscroll-behavior: contain;
+}
+
+.intro_sec .h_bg-image.right-panel-container::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	display: none;
+}
+
+.right-panel-container h2,
+.right-panel-container p {
+	margin-bottom: 12px;
+}
+
+@media (max-width: 991.98px) {
+	.intro_sec .h_bg-image.right-panel-container {
+		height: auto;
+		max-height: 70vh;
+	}
+}
