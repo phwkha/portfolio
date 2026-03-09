@@ -7,7 +7,6 @@ import {
 import withRouter from "../hooks/withRouter";
 import AppRoutes from "./routes";
 import Headermain from "../header";
-import DragonCursor from "../hooks/DragonCursor";
 import "./App.css";
 
 function _ScrollToTop(props) {
@@ -22,7 +21,6 @@ const ScrollToTop = withRouter(_ScrollToTop);
 export default function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
-        <DragonCursor />
       <ScrollToTop>
         <Headermain />
         <AppRoutes />

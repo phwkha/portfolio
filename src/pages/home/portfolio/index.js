@@ -5,8 +5,19 @@ const Portfolio = () => {
   return (
     <div className="h_bg-image order-1 order-lg-2 h-100 right-panel-container">
       <div className="portfolio-content">
-        <h1>My Projects</h1>
+        <h1>Portfolio</h1>
         <div className="projects-grid">
+          <div className="project-card">
+            <hr />
+            <h3>My AI Bot – Intelligent Chatbot System Powered by RAG (Retrieval-Augmented Generation)</h3>
+            <p>My AI Bot is a modern chatbot application leveraging Retrieval-Augmented Generation (RAG) to provide highly accurate responses based on specific private datasets. By combining the power of locally-hosted Large Language Models (LLMs) with context-aware data retrieval, this project effectively mitigates AI "hallucinations" and ensures data privacy.</p>
+            <a href="" rel="noopener noreferrer">
+              <div id="button_h" className="ac_btn btn">
+                View Source Code
+                <div className="ring one"></div>
+              </div>
+            </a>
+          </div>
           <div className="project-card">
             <hr />
             <h3>ChatWeb - Secure Messaging Platform with End-to-End Encryption (E2EE)</h3>

@@ -34,7 +34,7 @@ const Info = () => {
                 <p className="mb-1x">{introdata.description}</p>
                 <div className="intro_btn-action pb-5">
                   <a href={introdata.my_cv} rel="noopener noreferrer">
-                    <div id="button_p" className="ac_btn btn ">
+                    <div id="button_h" className="ac_btn btn ">
                       Resume
                       <div className="ring one"></div>
                       <div className="ring two"></div>
