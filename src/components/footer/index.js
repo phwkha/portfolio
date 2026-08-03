@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import { introdata } from "../../../content_option";
+import { introdata } from "../../data/content_option";
 
 const Footer = () => {
   return (

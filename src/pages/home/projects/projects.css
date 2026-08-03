@@ -60,7 +60,7 @@
     box-shadow: var(--card-shadow);
     transition: all 0.35s ease;
     display: grid;
-    grid-template-columns: 380px 1fr;
+    grid-template-columns: 240px 1fr;
 }
 
 .project_card:hover {
@@ -73,7 +73,8 @@
 .project_image_wrapper {
     position: relative;
     overflow: hidden;
-    min-height: 260px;
+    min-height: 100%;
+    background-color: var(--project-accent);
 }
 
 .project_image {
@@ -93,22 +94,32 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), transparent 60%);
+    background: linear-gradient(135deg, rgba(255,255,255,0.15), transparent 70%);
     display: flex;
-    align-items: flex-start;
-    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .project_number {
     font-family: 'Outfit', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 800;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(8px);
-    padding: 6px 14px;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 10rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.2);
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    backdrop-filter: none;
+    transform: rotate(-5deg) scale(0.9);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    user-select: none;
+}
+
+.project_card:hover .project_number {
+    transform: rotate(0deg) scale(1);
+    color: rgba(255, 255, 255, 0.35);
 }
 
 /* Body */
@@ -327,8 +338,12 @@
     }
 
     .project_image_wrapper {
-        min-height: 200px;
-        max-height: 240px;
+        min-height: 160px;
+        max-height: 160px;
+    }
+    
+    .project_number {
+        font-size: 7rem;
     }
 
     .section_title {

@@ -5,7 +5,7 @@ import "./style.css";
 
 const Themetoggle = () => {
   const [theme, settheme] = useState(() => {
-    return localStorage.getItem("theme") || "dark";
+    return localStorage.getItem("theme") || "light";
   });
   const themetoggle = () => {
     settheme(theme === "dark" ? "light" : "dark");

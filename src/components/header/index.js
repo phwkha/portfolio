@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
-import Themetoggle from "../components/themetoggle";
-import { logotext } from "../content_option";
+import Themetoggle from "../themetoggle";
+import { logotext, socialprofils } from "../../data/content_option";
 
 const Headermain = () => {
   const scrollTo = (id) => {

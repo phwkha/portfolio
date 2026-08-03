@@ -1,7 +1,7 @@
 import React from "react";
 import "./hero.css";
 import Typewriter from "typewriter-effect";
-import { introdata } from "../../../content_option";
+import { introdata } from "../../../data/content_option";
 import { FaEnvelope, FaGithub, FaPhoneAlt, FaDownload } from "react-icons/fa";
 
 const Hero = () => {

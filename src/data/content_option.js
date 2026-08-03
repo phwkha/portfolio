@@ -15,8 +15,8 @@ const introdata = {
   },
   description:
     "Software Engineering Student at Sai Gon University | Aspiring Backend Developer on a journey to becoming a Full-stack Professional.",
-  my_img_url: require("./assets/images/avatar.jpg"),
-  my_cv: require("./assets/cv-phanhuukha.pdf"),
+  my_img_url: require("../assets/images/avatar.jpg"),
+  my_cv: require("../assets/cv-phanhuukha.pdf"),
   github: "https://github.com/phwkha",
   email: "phanhuukha@gmail.com",
   phone: "+84 123 456 789",
@@ -24,9 +24,9 @@ const introdata = {
 
 const skills = [
   { name: "Java / Spring Boot", level: 65 },
-  { name: "Python / Django", level: 35 },
-  { name: "React / JavaScript", level: 50 },
-  { name: "PostgreSQL / MongoDB", level: 55 },
+  { name: "Python / Django", level: 45 },
+  { name: "React / JavaScript", level: 45 },
+  { name: "PostgreSQL / MongoDB", level: 40 },
   { name: "Docker", level: 50 },
   { name: "Redis / Kafka", level: 40 },
   { name: "AI / RAG / LLM", level: 35 },
@@ -46,6 +46,7 @@ const projects = [
       "Spring Boot",
       "React + Vite",
       "WebSocket / STOMP",
+      "JUnit / Mockito",
       "PostgreSQL",
       "MongoDB",
       "Redis",
@@ -56,6 +57,7 @@ const projects = [
       "Jenkins",
     ],
     highlights: [
+      "Wrote Unit Tests (JUnit / Mockito) to ensure backend reliability",
       "Self-learned and integrated WebSocket & STOMP for real-time messaging",
       "Experimented with hybrid storage: PostgreSQL for users, MongoDB for chat logs",
       "Explored event-driven architecture through Apache Kafka",

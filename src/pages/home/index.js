@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { meta } from "../../content_option";
+import { meta } from "../../data/content_option";
 import Hero from "./hero";
 import Projects from "./projects";
 import Skills from "./skills";
 import Contact from "./contact";
-import Footer from "./footer";
+import Footer from "../../components/footer";
 
 export const Home = () => {
   return (

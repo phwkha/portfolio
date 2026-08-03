@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./projects.css";
-import { projects } from "../../../content_option";
+import { projects } from "../../../data/content_option";
 import { FaGithub, FaChevronDown, FaChevronUp, FaServer, FaLayerGroup } from "react-icons/fa";
 
 const Projects = () => {
@@ -33,12 +33,7 @@ const Projects = () => {
             >
               {/* Image */}
               <div className="project_image_wrapper">
-                <img
-                  src={process.env.PUBLIC_URL + project.image}
-                  alt={project.title}
-                  className="project_image"
-                  loading="lazy"
-                />
+
                 <div className="project_image_overlay">
                   <span className="project_number">0{index + 1}</span>
                 </div>

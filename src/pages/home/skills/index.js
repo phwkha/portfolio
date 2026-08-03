@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./skills.css";
-import { skills } from "../../../content_option";
+import { skills } from "../../../data/content_option";
 
 const Skills = () => {
   const [visible, setVisible] = useState(false);
@@ -13,7 +13,7 @@ const Skills = () => {
           setVisible(true);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     if (sectionRef.current) {
@@ -30,7 +30,8 @@ const Skills = () => {
           <span className="section_tag">Learning</span>
           <h2 className="section_title">Skills & Technologies</h2>
           <p className="section_subtitle">
-            Technologies I've been exploring and practicing through personal projects. I'm still in the learning phase and have a long way to go.
+            Technologies I've been exploring and practicing through personal
+            projects. I'm still in the learning phase and have a long way to go.
           </p>
         </div>
 
@@ -61,17 +62,19 @@ const Skills = () => {
         {/* Tech categories */}
         <div className="tech_categories">
           <div className="tech_category">
-            <h4>Learned</h4>
+            <h4>Backend</h4>
             <div className="tech_icons">
               <span>Java</span>
               <span>Spring Boot</span>
               <span>Python</span>
               <span>Django</span>
               <span>REST API</span>
+              <span>WebSocket</span>
+              <span> JUnit/Mockito</span>
             </div>
           </div>
           <div className="tech_category">
-            <h4>Basic</h4>
+            <h4>Frontend</h4>
             <div className="tech_icons">
               <span>React</span>
               <span>Vite</span>
@@ -91,13 +94,24 @@ const Skills = () => {
             </div>
           </div>
           <div className="tech_category">
-            <h4>Exploring</h4>
+            <h4>DevOps & AI</h4>
             <div className="tech_icons">
               <span>Docker</span>
               <span>Jenkins</span>
               <span>ELK Stack</span>
               <span>Ollama</span>
               <span>LangChain</span>
+            </div>
+          </div>
+          <div className="tech_category">
+            <h4>Tools & Others</h4>
+            <div className="tech_icons">
+              <span>Linux / Bash</span>
+              <span>Postman</span>
+              <span>LaTeX</span>
+              <span>Antigravity CLI</span>
+              <span>Codex CLI</span>
+              <span>Maven</span>
             </div>
           </div>
         </div>
