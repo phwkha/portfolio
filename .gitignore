@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/ChatWeb
+/E2ee
+/my_rag_project

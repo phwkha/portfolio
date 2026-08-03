@@ -1,0 +1,360 @@
+.projects_section {
+    padding: 80px 0 100px;
+    position: relative;
+}
+
+.projects_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Section header */
+.section_header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.section_tag {
+    display: inline-block;
+    padding: 6px 16px;
+    background: var(--secondary-glow);
+    color: var(--secondary-color);
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.section_title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin: 0 0 12px;
+    letter-spacing: -0.02em;
+}
+
+.section_subtitle {
+    color: var(--muted-text);
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Projects grid */
+.projects_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+/* Project card */
+.project_card {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: all 0.35s ease;
+    display: grid;
+    grid-template-columns: 380px 1fr;
+}
+
+.project_card:hover {
+    box-shadow: var(--card-shadow-hover);
+    transform: translateY(-4px);
+    border-color: var(--project-accent, var(--secondary-color));
+}
+
+/* Image */
+.project_image_wrapper {
+    position: relative;
+    overflow: hidden;
+    min-height: 260px;
+}
+
+.project_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project_card:hover .project_image {
+    transform: scale(1.05);
+}
+
+.project_image_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), transparent 60%);
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.project_number {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    padding: 6px 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Body */
+.project_body {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.project_title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0 4px;
+    color: var(--text-color);
+}
+
+.project_subtitle {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--project-accent, var(--secondary-color));
+}
+
+.project_github_btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    color: var(--text-color) !important;
+    background: var(--glass-bg);
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    font-size: 1.1rem;
+}
+
+.project_github_btn:hover {
+    border-color: var(--project-accent, var(--secondary-color));
+    color: var(--project-accent, var(--secondary-color)) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Summary */
+.project_summary {
+    color: var(--muted-text);
+    font-size: 0.93rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+/* Tech tags */
+.project_tech_tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.tech_tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 8px;
+    background: var(--primary-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color-2);
+    transition: all 0.2s ease;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.tech_tag:hover {
+    border-color: var(--project-accent, var(--secondary-color));
+    background: var(--secondary-glow);
+}
+
+/* Expand button */
+.project_expand_btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    color: var(--project-accent, var(--secondary-color));
+    font-weight: 600;
+    font-size: 0.88rem;
+    cursor: pointer;
+    padding: 8px 0;
+    transition: all 0.2s ease;
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.project_expand_btn:hover {
+    gap: 12px;
+}
+
+/* Expandable details */
+.project_details {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    animation: fadeInUp 0.35s ease-out;
+}
+
+.project_detail_block {
+    margin-bottom: 24px;
+}
+
+.project_detail_block h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-color);
+}
+
+.project_detail_block h4 svg {
+    color: var(--project-accent, var(--secondary-color));
+    font-size: 0.9rem;
+}
+
+/* Highlights list */
+.project_highlights {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 10px;
+}
+
+.project_highlights li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--muted-text);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.highlight_bullet {
+    color: var(--project-accent, var(--secondary-color));
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Architecture flow */
+.project_arch_flow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.arch_node {
+    padding: 8px 16px;
+    border-radius: 10px;
+    background: var(--primary-color);
+    border: 1px solid var(--border-color);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-color-2);
+    font-family: 'JetBrains Mono', monospace;
+    transition: all 0.2s ease;
+}
+
+.arch_node:hover {
+    border-color: var(--project-accent, var(--secondary-color));
+    background: var(--secondary-glow);
+}
+
+.arch_arrow {
+    color: var(--muted-text);
+    font-size: 0.85rem;
+}
+
+/* Source code button */
+.project_source_btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    background: var(--project-accent, var(--secondary-color));
+    color: #fff !important;
+    transition: all 0.25s ease;
+    text-decoration: none !important;
+    margin-top: 8px;
+}
+
+.project_source_btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    filter: brightness(1.1);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .project_card {
+        grid-template-columns: 1fr;
+    }
+
+    .project_image_wrapper {
+        min-height: 200px;
+        max-height: 240px;
+    }
+
+    .section_title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects_section {
+        padding: 60px 0 80px;
+    }
+
+    .project_body {
+        padding: 20px;
+    }
+
+    .project_title {
+        font-size: 1.2rem;
+    }
+
+    .project_arch_flow {
+        gap: 6px;
+    }
+
+    .arch_node {
+        padding: 6px 10px;
+        font-size: 0.75rem;
+    }
+}
