@@ -18,8 +18,8 @@ const introdata = {
   my_img_url: require("../assets/images/avatar.jpg"),
   my_cv: require("../assets/cv-phanhuukha.pdf"),
   github: "https://github.com/phwkha",
-  email: "phanhuukha@gmail.com",
-  phone: "+84 123 456 789",
+  email: "phankhant0098@gmail.com",
+  phone: "0396028857",
 };
 
 const skills = [
