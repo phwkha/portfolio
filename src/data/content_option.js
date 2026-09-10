@@ -54,7 +54,6 @@ const projects = [
       "JWT",
       "Cloudinary",
       "Docker",
-      "Jenkins",
     ],
     highlights: [
       "Wrote Unit Tests (JUnit / Mockito) to ensure backend reliability",

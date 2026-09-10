@@ -98,6 +98,7 @@ const Skills = () => {
             <div className="tech_icons">
               <span>Docker</span>
               <span>Jenkins</span>
+              <span>Github Actions</span>
               <span>ELK Stack</span>
               <span>Ollama</span>
               <span>LangChain</span>
@@ -107,11 +108,11 @@ const Skills = () => {
             <h4>Tools & Others</h4>
             <div className="tech_icons">
               <span>Linux / Bash</span>
+              <span>Maven</span>
               <span>Postman</span>
               <span>LaTeX</span>
               <span>Antigravity CLI</span>
               <span>Codex CLI</span>
-              <span>Maven</span>
             </div>
           </div>
         </div>
