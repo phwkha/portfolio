@@ -75,7 +75,7 @@ const projects = [
       "ELK Logging",
       "Prometheus + Grafana",
     ],
-    url: "https://github.com/phwkha/ChatWeb",
+    url: "https://github.com/phwkha/ChatWeb-RealTime",
     accent: "#6366f1",
   },
   {
@@ -111,7 +111,7 @@ const projects = [
       "Spring Boot API",
       "React Frontend",
     ],
-    url: "https://github.com/phwkha",
+    url: "https://github.com/phwkha/Secure-Chat-Web---End-to-End-Encryption-Key-Transparency",
     accent: "#10b981",
   },
   {
@@ -152,7 +152,7 @@ const projects = [
       "Cross-Encoder",
       "Self-Eval Loop",
     ],
-    url: "https://github.com/phwkha",
+    url: "https://github.com/phwkha/Smart-Doc-AI",
     accent: "#f59e0b",
   },
 ];
