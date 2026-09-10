@@ -1,0 +1,93 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+
+% Formatting sections
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{8pt}
+
+% Document Info
+\title{CV - Phan Huu Kha}
+\author{Phan Huu Kha}
+\date{}
+
+\begin{document}
+
+\pagestyle{empty} % No page numbers
+
+% Header
+\begin{center}
+    {\huge \textbf{PHAN HUU KHA}} \\
+    \vspace{4pt}
+    {\large Aspiring Backend Developer} \\
+    \vspace{6pt}
+    \faEnvelope\ \href{mailto:phankhant0098@gmail.com}{phankhant0098@gmail.com} $\vert$ 
+    \faGithub\ \href{https://github.com/phwkha}{github.com/phwkha} $\vert$ 
+    \faGlobe\ \href{https://phwkha.github.io/portfolio/}{phwkha.github.io/portfolio}
+\end{center}
+
+
+% Summary
+\section{Profile}
+Software Engineering Student at Sai Gon University with a strong passion for Backend Development and Information Security. Constantly exploring and building side projects to solidify my knowledge in Java/Spring Boot, Python, and cloud-native technologies. Looking for an internship/fresher position to contribute and grow in a professional engineering environment.
+
+% Education
+ \section{Education}
+    \vspace{10pt}
+    \textbf{Sai Gon University} \hfill \textit{Sept. 2023 -- June 2028} \\
+    \textit{Engineer's Degree in Software Engineering} \hfill \textit{Current GPA: 3.4/4.0}
+
+% Skills
+\section{Technical Skills}
+\vspace{10pt}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \textbf{Backend:} Java, Spring Boot, Python, Django, REST API, WebSocket/STOMP, JUnit/Mockito
+    \item \textbf{Frontend:} React, JavaScript, HTML/CSS, Streamlit
+    \item \textbf{Databases \& Brokers:} PostgreSQL, MongoDB, Redis, FAISS, Apache Kafka
+    \item \textbf{DevOps \& AI:} Docker, Github Actions, Jenkins, ELK Stack, Ollama, LangChain
+    \item \textbf{Tools \& OS:} Linux (Ubuntu), Postman, LaTeX, Git, Swagger UI, Antigravity CLI
+\end{itemize}
+
+% Projects
+\section{Projects}
+\vspace{10pt}
+\textbf{ChatWeb} -- \textit{Real-time Chat Platform (Learning/Demo Project)}  \\
+\vspace{5pt}
+\textit{Role: Individual Developer} $\vert$ \textit{Stack: Java, Spring Boot, React, WebSocket, PostgreSQL, MongoDB, Redis, Kafka, Docker}
+\begin{itemize}[leftmargin=0.2in]
+    \item Built a real-time chat application to practice using WebSocket and STOMP in Spring Boot.
+    \item Integrated PostgreSQL for user data and MongoDB for chat logs to learn hybrid database usage.
+    \item Used Redis to manage online user sessions and speed up data retrieval.
+    \item Set up Apache Kafka as a message broker to explore event-driven architecture.
+    \item Practiced Docker containerization, Github Actions CI/CD, and system monitoring with Prometheus/Grafana.
+    \item Wrote Unit Tests (JUnit / Mockito) to ensure the backend functions correctly.
+\end{itemize}
+\vspace{5pt}
+\begin{flushleft}\faGithub\ \href{https://github.com/phwkha/ChatWeb-RealTime.git}{github.com/phwkha/ChatWeb-RealTime}\end{flushleft}
+
+\vspace{10pt} % Insert a blank line
+\textbf{SmartDoc AI} -- \textit{RAG-based Document Chatbot (Learning/Demo Project)}  \\
+\vspace{5pt}
+\textit{Role: Team Leader} $\vert$ \textit{Stack: Python, Django, Streamlit, Ollama, FAISS, Cross-Encoder, LangChain}
+\begin{itemize}[leftmargin=0.2in]
+    \item Developed a document chatbot to learn about Retrieval-Augmented Generation (RAG) and local LLMs.
+    \item Implemented a hybrid search combining FAISS (semantic search) and BM25 (keyword matching) to improve results.
+    \item Ran LLMs locally using Ollama to experiment with AI safely without relying on paid APIs.
+    \item Processed and extracted text from various file types including PDFs, DOCX, and images (EasyOCR).
+\end{itemize}
+\vspace{5pt}
+\begin{flushleft}\faGithub\ \href{https://github.com/phwkha/Smart-Doc-AI.git}{github.com/phwkha/Smart-Doc-AI}\end{flushleft}
+
+% Languages
+\section{Languages}
+\vspace{10pt}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \textbf{Vietnamese:} Native
+    \item \textbf{English:} Reading documentations and basic communication
+\end{itemize}
+
+\end{document}
